@@ -1,0 +1,138 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #646cff;
+}
+
+.controls {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-group label {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+select {
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.card {
+  background: #f9f9f9;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #333;
+}
+
+.id-badge {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.word-display {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.english {
+  font-size: 5rem;
+  font-weight: 900;
+  text-align: center;
+  word-break: break-all;
+}
+
+.meaning {
+  font-size: 3rem;
+  color: #e91e63;
+  font-weight: bold;
+  text-align: center;
+}
+
+.btn-meaning {
+  font-size: 2rem;
+  padding: 15px 40px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn-meaning:hover {
+  transform: scale(1.05);
+  background-color: #45a049;
+}
+
+.btn-next {
+  font-size: 1.8rem;
+  padding: 12px 60px;
+  margin-top: 30px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-next:hover {
+  background-color: #1976D2;
+}
+
+.no-data {
+  font-size: 2rem;
+  color: #ff5252;
+}
+
+@media (max-width: 600px) {
+  .english {
+    font-size: 3.5rem;
+  }
+  .meaning {
+    font-size: 2.2rem;
+  }
+  .btn-meaning {
+    font-size: 1.5rem;
+  }
+  .header h1 {
+    font-size: 2rem;
+  }
+}
